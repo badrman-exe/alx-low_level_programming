@@ -13,7 +13,7 @@ int main(void)
 
 	while (lower != '{')
 	{
-		if (lower != 'q' || lower != 'e')
+		if (lower != 'q' && lower != 'e')
 		{
 			putchar(lower);
 		}
