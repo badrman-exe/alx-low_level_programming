@@ -9,21 +9,18 @@
  */
 int main(void)
 {
-	int i, j, x, y, counter = 10;
+	int i, j, x, y;
 
 	for (i = 48; i <= 57; i++)
 	{
 		for (j = 48; j <= 57; j++)
 		{
+			y = j + 1;
 			for (x = i; x <= 57; x++)
 			{
-				for (y = 48; y <= 57; y++)
+				for (; y <= 57; y++)
 				{
-					if (counter == 0)
-					{
-						y = j + 1;
-						counter = 10;
-					}
+					
 					putchar(i);
 					putchar(j);
 					putchar(' ');
@@ -36,7 +33,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				counter--;
+				y = 48;
 			}
 		}
 	}
