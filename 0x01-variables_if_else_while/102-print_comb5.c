@@ -20,7 +20,6 @@ int main(void)
 			{
 				for (; y <= 57; y++)
 				{
-					
 					putchar(i);
 					putchar(j);
 					putchar(' ');
