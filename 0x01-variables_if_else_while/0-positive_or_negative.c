@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*checks the generated number n*/
+/**
+ * main - check the generated number
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
