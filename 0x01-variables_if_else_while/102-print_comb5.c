@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int i, j, x, y;
+	int i, j, x, y, counter = 10;
 
 	for (i = 48; i <= 57; i++)
 	{
@@ -17,8 +17,13 @@ int main(void)
 		{
 			for (x = i; x <= 57; x++)
 			{
-				for (y = j+1; y <= 57; y++)
+				for (y = 48; y <= 57; y++)
 				{
+					if (counter == 0)
+					{
+						y = j + 1;
+						counter = 10;
+					}
 					putchar(i);
 					putchar(j);
 					putchar(' ');
@@ -31,6 +36,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				counter--;
 			}
 		}
 	}
