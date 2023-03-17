@@ -9,15 +9,12 @@
  */
 int main(void)
 {
-	char lower = 'a';
+	int num = 48;
 
-	while (lower != '{')
+	while (num <= 57)
 	{
-		if (lower != 'q' && lower != 'e')
-		{
-			putchar(lower);
-		}
-		lower++;
+		putchar(num);
+		num++;
 	}
 	putchar('\n');
 	return (0);
