@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*checks the generated number n*/
+/**
+ * main - check the generated number
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
@@ -12,7 +16,7 @@ int main(void)
 		printf("%d is zero\n", n);
 	else if (n > 0)
 		printf("%d is positive\n", n);
-	else if(n < 0)
+	else if (n < 0)
 		printf("%d is negative\n", n);
 	return (0);
 }
