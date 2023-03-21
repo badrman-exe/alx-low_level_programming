@@ -13,5 +13,5 @@ int _abs(int n)
 		return (sqrt((n * n)));
 	}
 	else
-		return (0);
+		return (n);
 }
