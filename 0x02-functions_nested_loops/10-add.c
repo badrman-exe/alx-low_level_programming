@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * jack_bauer - function that prints every minute of the day, 24 hour clock
- * h = hour, m = minutes
- * / 10 allows second digit to rotate
- * for loop breaks before passing 24:00
- * Return: 24 hour clock line by line
+ * add - a function that adds two integers and returns the result
+ * @one: first number input
+ * @two: second number input
+ * Return: one + two
  */
 int add(int a, int b)
 {
