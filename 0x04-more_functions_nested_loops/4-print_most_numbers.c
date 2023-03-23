@@ -5,16 +5,16 @@
  *
  * Return: 0-9, excluding 2 and 4, followed by new line
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		if (i == 51 || i == 53)
+		if ((i == 2) || (i == 4))
 			continue;
 		else
-			_putchar(i);
+			_putchar(i + '0');
 	}
 	_putchar('\n');
 }
