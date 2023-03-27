@@ -5,12 +5,11 @@
  * followed by a new line
  * @str: string to print the chars from
  */
-void puts_half(char* str)
+void puts_half(char *str)
 {
 	int len, i;
 
 	len = 0;
-
 	while (str[len] != '\0')
 	{
 		len++;
