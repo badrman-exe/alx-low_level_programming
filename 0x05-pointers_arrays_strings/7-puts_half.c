@@ -15,10 +15,15 @@ void puts_half(char* str)
 	{
 		len++;
 	}
-
-	for (i = len/2; i < len; i ++)
+	if (len % 2 == 0)
 	{
-		putchar(str[i]);
+		for (i = len / 2; i < len; i++)
+			putchar(str[i]);
+	}
+	else
+	{
+		for (i = (len - 1) / 2; i < len; i++)
+			putchar(str[i]);
 	}
 
 	putchar('\n');
