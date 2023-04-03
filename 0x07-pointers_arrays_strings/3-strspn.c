@@ -1,25 +1,24 @@
 #include "main.h"
 /**
- * _strchr - function that locates a character in a string
- *@s: first value -char
- *@c: second value - char
+ * _strspn - prints the consecutive caracters of s1 that are in s2.
+ * @s: source string
+ * @accept: searching string
  *
- * Return: char with result
+ * Return: new string.
  */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
+	unsigned int i, j;
 
-	if (*s == '\0')
-		return (s);
-	while (*s)
+	for (j = 0; *(s + j); j++)
 	{
-		if (*s == c)
+		for (i = 0; *(accept + i); i++)
 		{
-			return (s);
+			if (*(s + j) == *(accept + i))
+				break;
 		}
-	       s++;
+	if (*(accept + i) == '\0')
+		break;
 	}
-	if (c == '\0')
-		return (s);
-	return ('\0');
+	return (j);
 }
