@@ -1,23 +1,19 @@
-#include "main.h"
-#include <stdio.h>
+#include "holberton.h"
+
 /**
- * cap_string - capitalizes most of the words in a string.
- * @s: analized string.
+ * _puts_recursion - Prints a string followed by a new line
+ * @s: string
  *
- * Return: String with all words capitalized.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int i = 0;
-void _puts_recursion(char* s)
+void _puts_recursion(char *s)
 {
-	if (s[i] != '\0')
-	{
-		putchar(s[i]);
-		i++;
-		_puts_recursion(s);
-	}
 	if (*s == 0)
 	{
-		putchar('\n');
+		_putchar('\n');
+		return;
 	}
-	
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
